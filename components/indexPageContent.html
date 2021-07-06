@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+          <title>Check</title>
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+    </svg>
+
+    <br>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">Private Planning Sheets</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-primary text-decoration-none" href="../components/signUp.php">Sign In</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="#">About</a>
+      </nav>
+    </div>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Investment Sheets</h1>
+          <p class="lead fw-normal">Planning your future investiments is important, most than you think.</p>
+          <button type="button" class="btn btn-dark">Coming Soon</button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1 user included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary" id="signUpButton" onclick="signUp()">Sign up for free</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary disabled">Coming soon</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+              <div class="card-header py-3 ">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$25<small class="text-muted fw-light">/mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>25 users included</li>
+                  <li>30 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary disabled">Coming Soon</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Free</th>
+              <th style="width: 22%;">Pro</th>
+              <th style="width: 22%;">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Data Save</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+  
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Permissions</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Sharing</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Unlimited members</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Extra security</th>
+              <td></td>
+              <td></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+</html>
