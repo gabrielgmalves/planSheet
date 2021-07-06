@@ -15,20 +15,20 @@
 </head>
 <body class="text-center">
     <main class="form-signin">
-        <form>
+        <form action="signUpProcessor.php" method="POST">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating hidden" id="nameInput">
-                <input type="text" class="form-control" id="floatingName" placeholder="Your name" required>
+                <input type="text" class="form-control" name="name" id="floatingName" placeholder="Your name">
                 <label for="floatingName">Name</label>
             </div>
         
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
             </div>
         
