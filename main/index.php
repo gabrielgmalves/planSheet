@@ -1,5 +1,6 @@
 <?php
     function initialContent() {require "../components/indexPageContent.html";}
+    function footer() {require "../components/footer.html";}
 ?>
 <!DOCTYPE html>
 <html lang="pt_BR">

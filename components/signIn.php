@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,7 @@
                 <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="name@example.com" required>
                 <label for="floatingEmail">Email address</label>
             </div>
+            
             <div class="form-floating">
                 <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
