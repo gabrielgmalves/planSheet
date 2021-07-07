@@ -15,17 +15,17 @@
 </head>
 <body class="text-center">
     <main class="form-signin">
-        <form action="signInProcessor.php" method="POST">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <form action="signInProcessor.php" method="POST" id="signInForm">
+            <h1 class="h3 mb-3 fw-normal" id="initialText">Please Sign In</h1>
 
-            <div class="form-floating hidden" id="nameInput">
+            <div class="form-floating hidden" id="nameDiv">
                 <input type="text" class="form-control" name="name" id="floatingName" placeholder="Your name">
                 <label for="floatingName">Name</label>
             </div>
         
             <div class="form-floating">
-                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Email address</label>
+                <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="name@example.com" required>
+                <label for="floatingEmail">Email address</label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
@@ -37,7 +37,7 @@
                     <input type="checkbox" value="firstTime" id="ckFirstTime" onclick="displayNameField()"> It's my first time
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            <button class="w-100 btn btn-lg btn-primary" id="btnSignInUp" type="submit">Sign In</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2021-2021</p>
         </form>
         <button type="button" class="btn btn-primary btn-floating" onclick="backHome()">
