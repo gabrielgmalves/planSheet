@@ -19,10 +19,12 @@
         $count = $statement->rowCount();
 
         if($count > 0){
-            echo "Achou dados!";
+            //echo "Achou dados!";
             $_SESSION['email'] = $email;
+            header('Location: ../main/internalPage.php');
         }else{
-            echo "Erro ao buscar dados!";
+            //echo "Erro ao buscar dados!";
+            header('Location: ../main/index.php');
         }
 
     }else{

@@ -2,8 +2,8 @@ function backHome(){
     window.location.href='../main/index.php';
 }
 
-function signUp(){
-    window.location.href='../components/signUp.php';
+function signIp(){
+    window.location.href='../components/signIn.php';
 }
 
 function displayNameField() {
